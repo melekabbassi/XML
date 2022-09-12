@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Group [
+    <!ELEMENT Group (student)>
+    <!ELEMENT student (name, lastName, num_insc, passport?)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT lastName (#PCDATA)>
+    <!ELEMENT num_insc (#PCDATA)>
+    <!ELEMENT passport (#PCDATA)>
+]>
+
+<Group>   
+    <student>
+        <name>Melek</name>
+        <lastName>abbassi</lastName>
+        <num_insc>123456</num_insc>
+        <passport>123456789</passport>
+    </student>
+</Group>
