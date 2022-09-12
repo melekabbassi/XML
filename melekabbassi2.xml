@@ -16,4 +16,10 @@
         <lastName>abbassi</lastName>
         <passport>123456789</passport>
     </student>
+
+    <student>
+        <num_insc>123457</num_insc>
+        <name>Melek</name>
+        <lastName>abbassi</lastName>
+    </student>
 </Group>
