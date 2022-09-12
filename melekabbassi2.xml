@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE Group [
-    <!ELEMENT Group (student)*>
+    <!ELEMENT Group (student)+>
     <!ELEMENT student (num_insc, name, lastName, passport?)>
     <!ELEMENT num_insc (#PCDATA)>
     <!ELEMENT name (#PCDATA)>
