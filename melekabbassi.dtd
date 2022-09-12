@@ -1,0 +1,4 @@
+<!ELEMENT Group (student)>
+<!ELEMENT student (name, lastName)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
