@@ -5,22 +5,33 @@
 <biblio>
     <livre>
         <titre>titre1</titre>
-        <auteur>auteur1</auteur>
-        <tome>
+        <auteurs>auteur1</auteurs>
+        <auteurs>auteur1_1</auteurs>
+        <tomes>
             <nbpage>56</nbpage>
-        </tome>
-        <editeur>editeur1</editeur>
-        <impression>5/10</impression>
-        <ISBN>2332</ISBN>
+        </tomes>
+        <tomes>
+            <nbpage>40</nbpage>
+        </tomes>
+        <edition>
+            <editeur>editeur1</editeur>
+            <lieu_edition>lieu1</lieu_edition>
+            <lieu_impression>lieu1_1</lieu_impression>
+            <ISBN>2323</ISBN>
+        </edition>
+        <avis>aaaaaaaaa</avis>
     </livre>
+
     <article>
         <titre>article1</titre>
-        <auteur>auteur1</auteur>
-        <journal>journal1</journal>
-        <volume>volume1</volume>
-        <page>3</page>
-        <annee>1999</annee>
-        <numero>56</numero>
-        <avis>avis</avis>
+        <auteurs>auteur2_1</auteurs>
+        <auteurs>auteur2_2</auteurs>
+        <ref>
+            <nom_journal>journal1</nom_journal>
+            <num_pages>3</num_pages>
+            <annee_pub>2011</annee_pub>
+            <num_journal>5</num_journal>
+        </ref>
+        <avis>aaaaaaaa</avis>
     </article>
 </biblio>

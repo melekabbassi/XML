@@ -1,16 +1,19 @@
-<!ELEMENT biblio (livre, article)>
-<!ELEMENT livre (titre, auteur, tome, editeur, impression, ISBN)>
+<!ELEMENT biblio (livre | article)*>
+<!ELEMENT livre (titre, auteurs+, tomes+, edition, avis?)>
 <!ELEMENT titre (#PCDATA)>
-<!ELEMENT auteur (#PCDATA)>
-<!ELEMENT tome (nbpage)>
+<!ELEMENT auteurs (#PCDATA)>
+<!ELEMENT tomes (nbpage)>
 <!ELEMENT nbpage (#PCDATA)>
+<!ELEMENT edition (editeur, lieu_edition, lieu_impression, ISBN)>
 <!ELEMENT editeur (#PCDATA)>
-<!ELEMENT impression (#PCDATA)>
+<!ELEMENT lieu_edition (#PCDATA)>
+<!ELEMENT lieu_impression (#PCDATA)>
 <!ELEMENT ISBN (#PCDATA)>
-<!ELEMENT article (titre, auteur, journal, volume, page, annee, numero, avis?)>
-<!ELEMENT journal (#PCDATA)>
-<!ELEMENT volume (#PCDATA)>
-<!ELEMENT page (#PCDATA)>
-<!ELEMENT annee (#PCDATA)>
-<!ELEMENT numero (#PCDATA)>
 <!ELEMENT avis (#PCDATA)>
+
+<!ELEMENT article (titre, auteurs+, ref, avis?)>
+<!ELEMENT ref (nom_journal, num_pages, annee_pub, num_journal )>
+<!ELEMENT nom_journal (#PCDATA)>
+<!ELEMENT num_pages (#PCDATA)>
+<!ELEMENT annee_pub (#PCDATA)>
+<!ELEMENT num_journal (#PCDATA)>
