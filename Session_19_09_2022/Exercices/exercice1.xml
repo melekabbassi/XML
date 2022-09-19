@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE biblio SYSTEM "exercice1.dtd">
+
+<biblio>
+    <livre>
+        <titre>titre1</titre>
+        <auteur>auteur1</auteur>
+        <tome>
+            <nbpage>56</nbpage>
+        </tome>
+        <editeur>editeur1</editeur>
+        <impression>5/10</impression>
+        <ISBN>2332</ISBN>
+    </livre>
+    <article>
+        <titre>article1</titre>
+        <auteur>auteur1</auteur>
+        <journal>journal1</journal>
+        <volume>volume1</volume>
+        <page>3</page>
+        <annee>1999</annee>
+        <numero>56</numero>
+        <avis>avis</avis>
+    </article>
+</biblio>

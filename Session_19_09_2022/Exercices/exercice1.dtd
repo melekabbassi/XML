@@ -1,0 +1,16 @@
+<!ELEMENT biblio (livre, article)>
+<!ELEMENT livre (titre, auteur, tome, editeur, impression, ISBN)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT auteur (#PCDATA)>
+<!ELEMENT tome (nbpage)>
+<!ELEMENT nbpage (#PCDATA)>
+<!ELEMENT editeur (#PCDATA)>
+<!ELEMENT impression (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT article (titre, auteur, journal, volume, page, annee, numero, avis?)>
+<!ELEMENT journal (#PCDATA)>
+<!ELEMENT volume (#PCDATA)>
+<!ELEMENT page (#PCDATA)>
+<!ELEMENT annee (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT avis (#PCDATA)>
