@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bibliography xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="correction.xsd">
+    <book>
+        <title>Le Petit Prince</title>
+        <author>Antoine de Saint-Exupéry</author>
+        <volumes>
+            <volume>
+                <pages>10</pages>
+            </volume>
+            <volume>
+                <pages>20</pages>
+            </volume>
+        </volumes>
+        <editionInfo>
+            <editor>Antoine de Saint-Exupéry</editor>
+            <editor>Antoine de Saint-Exupéry</editor>
+            <editionPlace>Paris</editionPlace>
+            <impressionPlace>Paris</impressionPlace>
+            <ISBN>123456789</ISBN>
+        </editionInfo>
+    </book>
+</bibliography>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="bibliography">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="book" maxOccurs="unbounded"/>
+                <xs:element ref="article" maxOccurs="unbounded"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="book">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="title" type="xs:string"/>
+                <xs:element name="author" type="xs:string"/>
+                <xs:element ref="volumes"/>
+                <xs:element ref="editionInfo"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="article">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="title" type="xs:string"/>
+                <xs:element name="author" type="xs:string"/>
+                <xs:element ref="publicationInfo"/>
+                <xs:element ref="opinion"/> 
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="volumes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="volume" type="xs:string"/>
+                <xs:element name="pages" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="editionInfo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="editor" type="xs:string"/>
+                <xs:element name="editor" type="xs:string"/>
+                <xs:element name="editionPlace" type="xs:string"/>
+                <xs:element name="impressionPlace" type="xs:string"/>
+                <xs:element name="ISBN" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="publicationInfo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="journalName" type="xs:string"/>
+                <xs:element name="pages" type="xs:integer"/>
+                <xs:element name="publicationYear" type="xs:integer"/>
+                <xs:element name="journalNumber"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="opinion">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="good"/>
+                <xs:enumeration value="bad"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>
