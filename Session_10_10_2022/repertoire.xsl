@@ -9,14 +9,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             <title>Repertoire</title>
         </head>
         <body>
+            <xsl:for-each select="repertoire/personne">
             <p>
-                Type du numero: <xsl:value-of select="repertoire/personne[nom='POPPINS']/telephones/telephone/@type">
-                                </xsl:value-of>
+                Personne: <xsl:value-of select="nom"/> <xsl:value-of select="prenom"/>
             </p>
-            <p>
-                Numero: <xsl:value-of select="repertoire/personne[nom='POPPINS']/telephones/telephone">
-                        </xsl:value-of>
-            </p>
+            </xsl:for-each>
         </body>
     </html>
 </xsl:template>

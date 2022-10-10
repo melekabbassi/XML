@@ -5,7 +5,7 @@
 
     <xs:element name="repertoire">
         <xs:complexType>
-            <xs:sequence>
+            <xs:sequence minOccurs="0" maxOccurs="unbounded">
                 <xs:element name="personne" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
