@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- make xs for exp.xml -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="repertoire">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="personne" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nom" type="xs:string"/>
+                            <xs:element name="prenom" type="xs:string"/>
+                            <xs:element name="adresse" type="adresseType" maxOccurs="1" />
+                            <xs:element name="telephones" type="telephonesType" maxOccurs="1"/>
+                            <xs:element name="emails" type="emailsType" maxOccurs="1"/>
+                        </xs:sequence>    
+                        <xs:attribute name="sexe" type="sexeType" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="sexeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="masculin"/>
+            <xs:enumeration value="feminin"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="adresseType">
+        <xs:sequence>
+            <xs:element name="numero" type="xs:integer"/>
+            <xs:element name="voie" type="voieType"/>
+            <xs:element name="codePostal" type="xs:integer"/>
+            <xs:element name="ville" type="xs:string"/>
+            <xs:element name="pays" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="voieType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="type" type="voieTypetype" use="required" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="voieTypetype">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="impasse" />
+            <xs:enumeration value="avenue" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="telephonesType">
+        <xs:sequence>
+            <xs:element name="telephone" maxOccurs="3">
+                <xs:complexType>
+                <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                        <xs:attribute name="type" type="telephoneType" use="required"/>
+                    </xs:extension>
+                </xs:simpleContent>
+            </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="telephoneType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="fixe"/>
+            <xs:enumeration value="portable"/>
+            <xs:enumeration value="bureau"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="emailsType">
+        <xs:sequence>
+            <xs:element name="email" maxOccurs="2">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="type" type="emailType" use="required"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="emailType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="personnel"/>
+            <xs:enumeration value="professionnel"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
