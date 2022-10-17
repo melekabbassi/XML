@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 
-<?xml-stylesheet href="exp.xsl" type="text/xsl"?>
+<?xml-stylesheet href="repertoire.xsl" type="text/xsl"?>
 
 <repertoire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="repertoire.xsd">
@@ -44,3 +44,5 @@
     </emails>
   </personne>
 </repertoire>
+
+<!-- use xml copy editor to Transform XML -->
