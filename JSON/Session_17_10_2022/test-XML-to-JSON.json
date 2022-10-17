@@ -1,0 +1,140 @@
+{
+  "repertoire": {
+    "$": {
+      "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+      "xsi:noNamespaceSchemaLocation": "repertoire.xsd"
+    },
+    "personne": [
+      {
+        "$": {
+          "sexe": "masculin"
+        },
+        "nom": [
+          "DOE"
+        ],
+        "prenom": [
+          "John"
+        ],
+        "adresse": [
+          {
+            "numero": [
+              "7"
+            ],
+            "voie": [
+              {
+                "_": "impasse du chemin",
+                "$": {
+                  "type": "impasse"
+                }
+              }
+            ],
+            "codePostal": [
+              "75015"
+            ],
+            "ville": [
+              "PARIS"
+            ],
+            "pays": [
+              "FRANCE"
+            ]
+          }
+        ],
+        "telephones": [
+          {
+            "telephone": [
+              {
+                "_": "01 02 03 04 05",
+                "$": {
+                  "type": "fixe"
+                }
+              },
+              {
+                "_": "06 07 08 09 10",
+                "$": {
+                  "type": "portable"
+                }
+              }
+            ]
+          }
+        ],
+        "emails": [
+          {
+            "email": [
+              {
+                "_": "john.doe@wanadoo.fr",
+                "$": {
+                  "type": "personnel"
+                }
+              },
+              {
+                "_": "john.doe@societe.com",
+                "$": {
+                  "type": "professionnel"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "sexe": "feminin"
+        },
+        "nom": [
+          "POPPINS"
+        ],
+        "prenom": [
+          "Marie"
+        ],
+        "adresse": [
+          {
+            "numero": [
+              "28"
+            ],
+            "voie": [
+              {
+                "_": "avenue de la république",
+                "$": {
+                  "type": "avenue"
+                }
+              }
+            ],
+            "codePostal": [
+              "13005"
+            ],
+            "ville": [
+              "MARSEILLE"
+            ],
+            "pays": [
+              "FRANCE"
+            ]
+          }
+        ],
+        "telephones": [
+          {
+            "telephone": [
+              {
+                "_": "04 05 06 07 08",
+                "$": {
+                  "type": "bureau"
+                }
+              }
+            ]
+          }
+        ],
+        "emails": [
+          {
+            "email": [
+              {
+                "_": "contact@poppins.fr",
+                "$": {
+                  "type": "professionnel"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

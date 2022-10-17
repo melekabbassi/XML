@@ -7,7 +7,12 @@
             "adresse": [
                 {
                     "numero": 7,
-                    "voie": "rue de la paix",
+                    "voie": [
+                        {
+                            "name":"rue de la paix",
+                            "type":"rue"
+                        }
+                    ],
                     "codePostal": 75000,
                     "ville": "Paris",
                     "pays": "France"
@@ -41,7 +46,12 @@
             "adresse":[
                 {
                     "numero": 28,
-                    "voie":"rue de la guerre",
+                    "voie": [
+                        {
+                            "name":"impasse de la guerre",
+                            "type":"impasse"
+                        }
+                    ],
                     "codePostal": 13005,
                     "ville": "Marseille",
                     "pays": "France"
