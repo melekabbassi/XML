@@ -1,0 +1,64 @@
+{
+    "People": [
+        {
+            "firstName": "John",
+            "lastName": "DOE",
+            "sexe": "M",
+            "adresse": [
+                {
+                    "numero": 7,
+                    "voie": "rue de la paix",
+                    "codePostal": 75000,
+                    "ville": "Paris",
+                    "pays": "France"
+                }
+            ],
+            "telephone": [
+                {
+                    "numero": 123456789,
+                    "type": "fixe"
+                },
+                {
+                    "numero": 123456710,
+                    "type": "mobile"
+                }
+            ],
+            "emails": [
+                {
+                    "email": "John.doe@yahoo.fr",
+                    "type": "personnel"
+                },
+                {
+                    "email": "John.doe@societe.com",
+                    "type": "professionnel"
+                }
+            ]
+        },
+        {
+            "lastName": "POPPINS",
+            "firstName": "Marie",
+            "sexe": "F",
+            "adresse":[
+                {
+                    "numero": 28,
+                    "voie":"rue de la guerre",
+                    "codePostal": 13005,
+                    "ville": "Marseille",
+                    "pays": "France"
+                }
+            ],
+            "telephone": [
+                {
+                    "numero":987654321,
+                    "type":"mobile"
+                }
+            ],
+            "emails":[
+                {
+                    "email":"marie.poppins@societe.fr",
+                    "type":"professionnel"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "Influencers": [
+        {
+            "name": "Jaxon",
+            "age": 42,
+            "Works at": "Microsoft"
+        },
+        {
+            "name": "Miller",
+            "age": 35,
+            "Works at": "Google"
+        }
+    ]
+}
