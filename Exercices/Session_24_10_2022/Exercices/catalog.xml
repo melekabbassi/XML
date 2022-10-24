@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE CATALOG SYSTEM "CATALOG.dtd">
+<!-- <!DOCTYPE CATALOG SYSTEM "CATALOG.dtd"> -->
+<?xml-model href="catalog.xsd"?>
 
 <CATALOG>
     <PRODUCT>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="CATALOG">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="PRODUCT" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="SPECIFICATIONS">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="WEIGHT" type="xs:decimal" use="required" />
+                                            <xs:attribute name="POWER" type="xs:decimal" use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="OPTIONS">
+                                <xs:complexType>
+                                    <xs:attribute name="FINISH" use="required" />
+                                    <xs:attribute name="ADAPTER" use="required" />
+                                    <xs:attribute name="CASE" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="PRICE">
+                                <xs:complexType>
+                                    <xs:attribute name="MSRP" type="xs:decimal" use="required" />
+                                    <xs:attribute name="WHOLESALE" type="xs:decimal" use="required" />
+                                    <xs:attribute name="STREET" type="xs:decimal" use="required" />
+                                    <xs:attribute name="SHIPPING" type="xs:decimal" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="NOTES" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="NAME" />
+                        <xs:attribute name="CATEGORY" />
+                        <xs:attribute name="PARTNUM" type="xs:integer" />
+                        <xs:attribute name="PLANT" />
+                        <xs:attribute name="INVENTORY" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
