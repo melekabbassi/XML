@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE CATALOG SYSTEM "CATALOG.dtd">
+
+<CATALOG>
+    <PRODUCT>
+        <SPECIFICATIONS WEIGHT="1.5" POWER="1.5">1/2" Drill</SPECIFICATIONS>
+        <OPTIONS FINISH="Polished" ADAPTER="Included" CASE="HardShell"/>
+        <PRICE MSRP="99.95" WHOLESALE="79.95" STREET="89.95" SHIPPING="5.00"/>
+        <NOTES>For use in tight spaces</NOTES>
+    </PRODUCT>
+
+    <PRODUCT NAME="Screwdriver" CATEGORY="HandTool" PARTNUM="1234"
+             PLANT="Pittsburgh" INVENTORY="Backordered">
+        <SPECIFICATIONS WEIGHT="0.5" POWER="0.5">1/4" Screwdriver</SPECIFICATIONS>
+        <OPTIONS FINISH="Matte" ADAPTER="NotApplicable" CASE="Soft"/>
+        <PRICE MSRP="29.95" WHOLESALE="19.95" STREET="24.95" SHIPPING="2.00"/>
+        <NOTES>For use in tight spaces</NOTES>
+    </PRODUCT>
+
+    <PRODUCT NAME="Saw" CATEGORY="Table" PARTNUM="5678"
+             PLANT="Milwaukaee" INVENTORY="Discontinued">
+        <SPECIFICATIONS WEIGHT="10.0" POWER="2.0">10" Table Saw</SPECIFICATIONS>
+        <OPTIONS FINISH="Metal" ADAPTER="Optional" CASE="NotApplicable"/>
+        <PRICE MSRP="299.95" WHOLESALE="249.95" STREET="279.95" SHIPPING="10.00"/>
+        <NOTES>For use in tight spaces</NOTES>
+    </PRODUCT>
+
+    <PRODUCT NAME="Sander" CATEGORY="HandTool" PARTNUM="9012"
+             PLANT="Pittsburgh" INVENTORY="InStock">
+        <SPECIFICATIONS WEIGHT="1.0" POWER="1.0">1/2" Sander</SPECIFICATIONS>
+        <OPTIONS FINISH="Polished" ADAPTER="Included" CASE="HardShell"/>
+        <PRICE MSRP="99.95" WHOLESALE="79.95" STREET="89.95" SHIPPING="5.00"/>
+        <NOTES>For use in tight spaces</NOTES>
+    </PRODUCT>
+</CATALOG>
